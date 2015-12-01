@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servletMVC-config>
+	<action name="test" class="com.sclovel.model.SampleAction" >
+		<!-- <result name="success">/index.jsp</result>
+		<result name="input">/login.jsp</result> -->
+	</action>
+	<action name="login" class="com.sclovel.model.AdminAction">
+		<result name="success">/ok.jsp</result>
+		<result name="input">/login.jsp</result>
+	</action>
+	<action name="rest/sample" class="com.sclovel.model.RESTfulAction">
+		<result name="success">/error.jsp</result>
+	</action>
+</servletMVC-config>
