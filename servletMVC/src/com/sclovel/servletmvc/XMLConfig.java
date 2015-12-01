@@ -20,7 +20,7 @@ public class XMLConfig {
 	public static Map<Object,Object> getMvcConfig(String url){
 		HashMap<Object,Object> config = new HashMap<Object,Object>();
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-		System.out.println("¿ªÊ¼¼ÓÔØÅäÖÃÎÄ¼ş...");
+		System.out.println("å¼€å§‹åŠ è½½é…ç½®æ–‡ä»¶...");
 		
 		DocumentBuilder builder = null;
 		try {
@@ -68,14 +68,6 @@ public class XMLConfig {
 		}
 		return config;
 	}
-	public static void main(String[] args) {
-		Map<Object, Object> m = getMvcConfig("C:\\Users\\SUCHU\\workspace-j2ee\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\ServletMVC\\WEB-INF\\classes\\"+"mvc-config.xml");
-	//	Java´úÂë 
-		System.out.println("MAP£­£­£­£­£­");
 
-		for(Entry<Object, Object> entry:m.entrySet()){    
-		     System.out.println(entry.getKey()+"--->"+entry.getValue());    
-		}   
-	}
 }
 
